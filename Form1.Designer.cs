@@ -101,7 +101,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 69);
             this.button1.TabIndex = 0;
-            this.button1.Text = "MR+";
+            this.button1.Text = "?";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -112,7 +112,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(81, 69);
             this.button2.TabIndex = 1;
-            this.button2.Text = "MR-";
+            this.button2.Text = "C";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -123,7 +123,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(81, 69);
             this.button3.TabIndex = 2;
-            this.button3.Text = "C";
+            this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -182,16 +182,16 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button9_one
+            // button9
             // 
             this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button9.Location = new System.Drawing.Point(3, 153);
-            this.button9.Name = "button9_one";
+            this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(81, 69);
             this.button9.TabIndex = 8;
             this.button9.Text = "1";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_one_Click);
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -332,6 +332,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
