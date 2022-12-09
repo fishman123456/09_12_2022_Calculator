@@ -1,0 +1,17 @@
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\bin\Debug\net6.0-windows\09_12_2022_Calculator.exe
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\bin\Debug\net6.0-windows\09_12_2022_Calculator.deps.json
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\bin\Debug\net6.0-windows\09_12_2022_Calculator.runtimeconfig.json
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\bin\Debug\net6.0-windows\09_12_2022_Calculator.dll
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\bin\Debug\net6.0-windows\09_12_2022_Calculator.pdb
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\09_12_2022_Calculator.csproj.AssemblyReference.cache
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\_09_12_2022_Calculator.Form1.resources
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\09_12_2022_Calculator.csproj.GenerateResource.cache
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\09_12_2022_Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\09_12_2022_Calculator.AssemblyInfoInputs.cache
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\09_12_2022_Calculator.AssemblyInfo.cs
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\09_12_2022_Calculator.csproj.CoreCompileInputs.cache
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\09_12_2022_Calculator.dll
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\refint\09_12_2022_Calculator.dll
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\09_12_2022_Calculator.pdb
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\09_12_2022_Calculator.genruntimeconfig.cache
+C:\Users\profi\Documents\Git Hub\09_12_2022_Calculator\obj\Debug\net6.0-windows\ref\09_12_2022_Calculator.dll
