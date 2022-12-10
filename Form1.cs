@@ -2,10 +2,13 @@ namespace _09_12_2022_Calculator
 {
     public partial class Form1 : Form
     {
+        public string last;
+        bool flag_d = false;
         public Form1()
         {
             InitializeComponent();
         }
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)// TODO text
         {
@@ -27,7 +30,7 @@ namespace _09_12_2022_Calculator
 
         private void button3_Click(object sender, EventArgs e)// TODO удаление последнего символа
         {
-            if (textBox1.Text.Length >0)
+            if (textBox1.Text.Length > 0)
             {
                 textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             }
@@ -41,22 +44,45 @@ namespace _09_12_2022_Calculator
 
         private void button5_Click(object sender, EventArgs e)// TODO +
         {
-            textBox1.Text += button5.Text;
+            Schet();
+
+            if (flag_d)
+            {
+                textBox1.Text += button5.Text;
+                flag_d = false;
+            }
+
         }
 
         private void button6_Click(object sender, EventArgs e)// TODO -
         {
-            textBox1.Text += button6.Text;
+            Schet();
+            if (flag_d)
+            {
+                textBox1.Text += button6.Text;
+                flag_d = false;
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)// TODO *
         {
-            textBox1.Text += button7.Text;
+            Schet();
+            if (flag_d)
+            {
+                textBox1.Text += button7.Text;
+                flag_d = false;
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)// TODO /
         {
-            textBox1.Text += button8.Text;
+            Schet();
+            if (flag_d)
+            {
+                textBox1.Text += button8.Text;
+                flag_d = false;
+            }
+
         }
 
         private void button9_Click(object sender, EventArgs e)// TODO 1
@@ -104,17 +130,45 @@ namespace _09_12_2022_Calculator
 
         private void button18_Click(object sender, EventArgs e)// TODO Резерв1
         {
-           
+
         }
 
         private void button19_Click(object sender, EventArgs e)// TODO Резерв2
         {
-           
+
         }
 
-        private void button20_Click(object sender, EventArgs e)
+        private void button20_Click(object sender, EventArgs e)// TODO знак "="
         {
-            
+
+        }
+        public bool Schet()
+        {
+            if (textBox1.Text.Length > 0)
+            {
+                last = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
+            }
+            if (last != "+") 
+            {  
+                if (last!="-")
+                {
+                    if (last!="*")
+                    {
+                        if (last!="/")
+                        {
+                            flag_d = true;
+                        }
+                    }
+                }
+            }
+            textBox2.Text = last;
+            textBox3.Text = flag_d.ToString();
+            return flag_d;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

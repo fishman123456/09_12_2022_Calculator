@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\profi\\Documents\\Git Hub\\09_12_2022_Calculator\\09_12_2022_Calculator.csproj": {}
+    "C:\\Users\\Fishman_1\\Documents\\GitHub\\09_12_2022_Calculator\\09_12_2022_Calculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\profi\\Documents\\Git Hub\\09_12_2022_Calculator\\09_12_2022_Calculator.csproj": {
+    "C:\\Users\\Fishman_1\\Documents\\GitHub\\09_12_2022_Calculator\\09_12_2022_Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\profi\\Documents\\Git Hub\\09_12_2022_Calculator\\09_12_2022_Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\Fishman_1\\Documents\\GitHub\\09_12_2022_Calculator\\09_12_2022_Calculator.csproj",
         "projectName": "09_12_2022_Calculator",
-        "projectPath": "C:\\Users\\profi\\Documents\\Git Hub\\09_12_2022_Calculator\\09_12_2022_Calculator.csproj",
-        "packagesPath": "C:\\Users\\profi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\profi\\Documents\\Git Hub\\09_12_2022_Calculator\\obj\\",
+        "projectPath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\09_12_2022_Calculator\\09_12_2022_Calculator.csproj",
+        "packagesPath": "C:\\Users\\Fishman_1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\09_12_2022_Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\profi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fishman_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
