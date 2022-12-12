@@ -128,7 +128,7 @@ namespace _09_12_2022_Calculator
             Schet();
             richTextBox1.Text = result.ToString();
         }
-        public void Schet()
+        public void Schet() // функция для проведения действий с элементами в строке
         {
             string[] b = richTextBox1.Text.Split('+', '-', '/', '*');
             try
@@ -168,7 +168,7 @@ namespace _09_12_2022_Calculator
 
         }
 
-        public string ProvLastChar(char j)
+        public string ProvLastChar(char j) // функция проверки на второй знак действия + - * /
         {
             char[] chars = richTextBox1.Text.ToCharArray();
             int numLastChar = chars.Length;
