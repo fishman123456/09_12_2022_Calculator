@@ -8,7 +8,7 @@ namespace _09_12_2022_Calculator
 
 
         private double result;
-        private double a = 0;
+        public double a ;
         char last_char;
        
         public Form1()
@@ -24,7 +24,7 @@ namespace _09_12_2022_Calculator
         private void button2_Click(object sender, EventArgs e)// TODO очистка строки
         {
             richTextBox1.Text = null;
-            a = 0;
+           
         }
 
         private void button3_Click(object sender, EventArgs e)// TODO удаление последнего символа
@@ -169,7 +169,7 @@ namespace _09_12_2022_Calculator
             int numLastChar = chars.Length;
             try
             {
-                char last_char = chars[numLastChar - 1];
+                 last_char = chars[numLastChar - 1];
             }
             catch (Exception)
             {
