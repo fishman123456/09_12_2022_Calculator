@@ -113,9 +113,9 @@ namespace _09_12_2022_Calculator
             richTextBox1.Text += button17.Text;
         }
 
-        private void button18_Click(object sender, EventArgs e)// TODO Резерв1
+        private void button18_Click(object sender, EventArgs e)// TODO 0
         {
-
+            richTextBox1.Text += button17.Text;
         }
 
         private void button19_Click(object sender, EventArgs e)// TODO Резерв2
@@ -148,7 +148,7 @@ namespace _09_12_2022_Calculator
             }
             catch (Exception)
             {
-                MessageBox.Show("Так не работает");
+                MessageBox.Show("Так не работает удаляем последний символ!");
                 int StartPosDel = richTextBox1.SelectionStart;
                 int LenSelection = richTextBox1.SelectionLength;
                 richTextBox1.Text = richTextBox1.Text.Remove(StartPosDel, LenSelection);
