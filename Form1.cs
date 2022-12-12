@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace _09_12_2022_Calculator
@@ -8,6 +9,7 @@ namespace _09_12_2022_Calculator
         bool flag_d = false;
         private double result;
         private double a = 0;
+        char last_char;
 
 
         public Form1()
@@ -146,10 +148,13 @@ namespace _09_12_2022_Calculator
             }
             catch (Exception)
             {
-                
-                throw;
+                MessageBox.Show("Так не работает");
+                int StartPosDel = richTextBox1.SelectionStart;
+                int LenSelection = richTextBox1.SelectionLength;
+                richTextBox1.Text = richTextBox1.Text.Remove(StartPosDel, LenSelection);
+
             }
-            finally { richTextBox1.Text =a.ToString(); }
+            finally { richTextBox1.Text = result.ToString("ghgh"); }
 
         }
 
@@ -167,9 +172,17 @@ namespace _09_12_2022_Calculator
         {
             char[] chars = richTextBox1.Text.ToCharArray();
             int numLastChar = chars.Length;
-            char last_char = chars[numLastChar-1];
-          
-    
+            try
+            {
+                char last_char = chars[numLastChar - 1];
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Введите число");
+                richTextBox1.Text.DefaultIfEmpty();
+
+            }
+
         if (last_char != '+' && last_char != '-' && last_char != '/' && last_char != '*')
             {
                 return richTextBox1.Text += j;

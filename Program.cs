@@ -1,3 +1,5 @@
+using System.Security.Cryptography;
+
 namespace _09_12_2022_Calculator
 {
     internal static class Program
@@ -12,6 +14,7 @@ namespace _09_12_2022_Calculator
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+           
         }
     }
 }
