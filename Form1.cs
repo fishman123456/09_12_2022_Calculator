@@ -1,12 +1,17 @@
+using System.Windows.Forms;
+
 namespace _09_12_2022_Calculator
 {
     public partial class Form1 : Form
     {
         public string last;
         bool flag_d = false;
+        private double result;
+        private double a = 0;
         public Form1()
         {
             InitializeComponent();
+            textBox1.Text = a.ToString();
         }
 
 
@@ -44,45 +49,22 @@ namespace _09_12_2022_Calculator
 
         private void button5_Click(object sender, EventArgs e)// TODO +
         {
-            Schet();
-
-            if (flag_d)
-            {
                 textBox1.Text += button5.Text;
-                flag_d = false;
-            }
-
         }
 
         private void button6_Click(object sender, EventArgs e)// TODO -
         {
-            Schet();
-            if (flag_d)
-            {
                 textBox1.Text += button6.Text;
-                flag_d = false;
-            }
         }
 
         private void button7_Click(object sender, EventArgs e)// TODO *
         {
-            Schet();
-            if (flag_d)
-            {
                 textBox1.Text += button7.Text;
-                flag_d = false;
-            }
         }
 
         private void button8_Click(object sender, EventArgs e)// TODO /
         {
-            Schet();
-            if (flag_d)
-            {
                 textBox1.Text += button8.Text;
-                flag_d = false;
-            }
-
         }
 
         private void button9_Click(object sender, EventArgs e)// TODO 1
@@ -144,29 +126,37 @@ namespace _09_12_2022_Calculator
         }
         public bool Schet()
         {
-            if (textBox1.Text.Length > 0)
-            {
-                last = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
-            }
-            if (last != "+") 
-            {  
-                if (last!="-")
-                {
-                    if (last!="*")
-                    {
-                        if (last!="/")
-                        {
-                            flag_d = true;
-                        }
-                    }
-                }
-            }
-            textBox2.Text = last;
-            textBox3.Text = flag_d.ToString();
-            return flag_d;
+            string[] b = textBox1.Text.Split('+', '-', '/', '*');
+
+            if (textBox1.Text.Contains("+"))
+                result = Convert.ToDouble(b[0]) + Convert.ToDouble(b[1]);
+
+            if (textBox1.Text.Contains("-"))
+                result = Convert.ToDouble(b[0]) - Convert.ToDouble(b[1]);
+
+            if (textBox1.Text.Contains("/"))
+                result = Convert.ToDouble(b[0]) / Convert.ToDouble(b[1]);
+
+            if (textBox1.Text.Contains("*"))
+                result = Convert.ToDouble(b[0]) * Convert.ToDouble(b[1]);
+
+        }
+       
+        }
+    public string ProvLastChar(char j)
+    {
+        char last_char = textBox1.Text[textBox1.Text.Length - 1];
+        if (last_char != '+' && last_char != '-' && last_char != '/' && last_char != '*')
+        {
+            return textBox1.Text += j;
+        }
+        else
+        {
+            return textBox1.Text;
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+    }
+    private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
