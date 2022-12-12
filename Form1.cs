@@ -5,22 +5,17 @@ namespace _09_12_2022_Calculator
 {
     public partial class Form1 : Form
     {
-        public string last;
-        bool flag_d = false;
+
+
         private double result;
         private double a = 0;
         char last_char;
-
-
+       
         public Form1()
         {
             InitializeComponent();
             richTextBox1.Text = a.ToString();
         }
-
-
-
-
         private void button1_Click(object sender, EventArgs e)// TODO файл справки
         {
             MessageBox.Show("Программа калькулятор создан 12-12-2022");
@@ -115,12 +110,12 @@ namespace _09_12_2022_Calculator
 
         private void button18_Click(object sender, EventArgs e)// TODO 0
         {
-            richTextBox1.Text += button17.Text;
+            richTextBox1.Text += button18.Text;
         }
 
         private void button19_Click(object sender, EventArgs e)// TODO Резерв2
         {
-
+            richTextBox1.Text += button19.Text;
         }
 
         private void button20_Click(object sender, EventArgs e)// TODO знак "="
@@ -197,6 +192,12 @@ namespace _09_12_2022_Calculator
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+        public void Clear()
+        {
+            richTextBox1.SelectAll();
+
+            richTextBox1.SelectedText = "";
         }
     }
 
