@@ -14,7 +14,7 @@ namespace _09_12_2022_Calculator
         public Form1()
         {
             InitializeComponent();
-            richTextBox1.Text = a.ToString();
+            maskedTextBox1.Text = a.ToString();
         }
         private void button1_Click(object sender, EventArgs e)// TODO файл справки
         {
@@ -23,15 +23,15 @@ namespace _09_12_2022_Calculator
 
         private void button2_Click(object sender, EventArgs e)// TODO очистка строки
         {
-            richTextBox1.Text = null;
+            maskedTextBox1.Text = null;
            
         }
 
         private void button3_Click(object sender, EventArgs e)// TODO удаление последнего символа
         {
-            if (richTextBox1.Text.Length > 0)
+            if (maskedTextBox1.Text.Length > 0)
             {
-                richTextBox1.Text = richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
+                maskedTextBox1.Text = maskedTextBox1.Text.Remove(maskedTextBox1.Text.Length - 1);
             }
         }
 
@@ -43,113 +43,113 @@ namespace _09_12_2022_Calculator
 
         private void button5_Click(object sender, EventArgs e)// TODO +
         {
-            richTextBox1.Text = ProvLastChar('+');
-           // richTextBox1.Text += button5.Text;
+            maskedTextBox1.Text = ProvLastChar('+');
+           // maskedTextBox1.Text += button5.Text;
         }
 
         private void button6_Click(object sender, EventArgs e)// TODO -
         {
-            richTextBox1.Text = ProvLastChar('-');
-           // richTextBox1.Text += button6.Text;
+            maskedTextBox1.Text = ProvLastChar('-');
+           // maskedTextBox1.Text += button6.Text;
         }
 
         private void button7_Click(object sender, EventArgs e)// TODO *
         {
-            richTextBox1.Text = ProvLastChar('*');
-           // richTextBox1.Text += button7.Text;
+            maskedTextBox1.Text = ProvLastChar('*');
+           // maskedTextBox1.Text += button7.Text;
         }
 
         private void button8_Click(object sender, EventArgs e)// TODO /
         {
-            richTextBox1.Text = ProvLastChar('/');
-            //richTextBox1.Text += button8.Text;
+            maskedTextBox1.Text = ProvLastChar('/');
+            //maskedTextBox1.Text += button8.Text;
         }
 
         private void button9_Click(object sender, EventArgs e)// TODO 1
         {
-            richTextBox1.Text += button9.Text;
+            maskedTextBox1.Text += button9.Text;
         }
         private void button10_Click(object sender, EventArgs e)// TODO 2
         {
-            richTextBox1.Text += button10.Text;
+            maskedTextBox1.Text += button10.Text;
         }
         private void button11_Click(object sender, EventArgs e)// TODO 3
         {
-            richTextBox1.Text += button11.Text;
+            maskedTextBox1.Text += button11.Text;
         }
 
         private void button12_Click(object sender, EventArgs e)// TODO 4
         {
-            richTextBox1.Text += button12.Text;
+            maskedTextBox1.Text += button12.Text;
         }
 
         private void button13_Click(object sender, EventArgs e)// TODO 5
         {
-            richTextBox1.Text += button13.Text;
+            maskedTextBox1.Text += button13.Text;
         }
 
         private void button14_Click(object sender, EventArgs e)// TODO 6
         {
-            richTextBox1.Text += button14.Text;
+            maskedTextBox1.Text += button14.Text;
         }
 
         private void button15_Click(object sender, EventArgs e)// TODO 7
         {
-            richTextBox1.Text += button15.Text;
+            maskedTextBox1.Text += button15.Text;
         }
 
         private void button16_Click(object sender, EventArgs e)// TODO 8
         {
-            richTextBox1.Text += button16.Text;
+            maskedTextBox1.Text += button16.Text;
         }
 
         private void button17_Click(object sender, EventArgs e)// TODO 9
         {
-            richTextBox1.Text += button17.Text;
+            maskedTextBox1.Text += button17.Text;
         }
 
         private void button18_Click(object sender, EventArgs e)// TODO 0
         {
-            richTextBox1.Text += button18.Text;
+            maskedTextBox1.Text += button18.Text;
         }
 
         private void button19_Click(object sender, EventArgs e)// TODO Резерв2
         {
-            richTextBox1.Text += button19.Text;
+            maskedTextBox1.Text += button19.Text;
         }
 
         private void button20_Click(object sender, EventArgs e)// TODO знак "="
         {
             Schet();
-            richTextBox1.Text = result.ToString();
+            maskedTextBox1.Text = result.ToString();
         }
         public void Schet() // функция для проведения действий с элементами в строке
         {
-            string[] b = richTextBox1.Text.Split('+', '-', '/', '*');
+            string[] b = maskedTextBox1.Text.Split('+', '-', '/', '*');
             try
             {
-                if (richTextBox1.Text.Contains("+"))
+                if (maskedTextBox1.Text.Contains("+"))
                     result = Convert.ToDouble(b[0]) + Convert.ToDouble(b[1]);
 
-                if (richTextBox1.Text.Contains("-"))
+                if (maskedTextBox1.Text.Contains("-"))
                     result = Convert.ToDouble(b[0]) - Convert.ToDouble(b[1]);
 
-                if (richTextBox1.Text.Contains("/"))
+                if (maskedTextBox1.Text.Contains("/"))
                     result = Convert.ToDouble(b[0]) / Convert.ToDouble(b[1]);
 
-                if (richTextBox1.Text.Contains("*"))
+                if (maskedTextBox1.Text.Contains("*"))
                     result = Convert.ToDouble(b[0]) * Convert.ToDouble(b[1]);
 
             }
             catch (Exception)
             {
                 MessageBox.Show("Так не работает удаляем последний символ!");
-                int StartPosDel = richTextBox1.SelectionStart;
-                int LenSelection = richTextBox1.SelectionLength;
-                richTextBox1.Text = richTextBox1.Text.Remove(StartPosDel, LenSelection);
+                int StartPosDel = maskedTextBox1.SelectionStart;
+                int LenSelection = maskedTextBox1.SelectionLength;
+                maskedTextBox1.Text = maskedTextBox1.Text.Remove(StartPosDel, LenSelection);
 
             }
-            finally { richTextBox1.Text = result.ToString("ghgh"); }
+            finally { maskedTextBox1.Text = result.ToString("ghgh"); }
 
         }
 
@@ -158,14 +158,14 @@ namespace _09_12_2022_Calculator
 
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void maskedTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         public string ProvLastChar(char j) // функция проверки на второй знак действия + - * /
         {
-            char[] chars = richTextBox1.Text.ToCharArray();
+            char[] chars = maskedTextBox1.Text.ToCharArray();
             int numLastChar = chars.Length;
             try
             {
@@ -174,17 +174,17 @@ namespace _09_12_2022_Calculator
             catch (Exception)
             {
                 MessageBox.Show("Введите число");
-                richTextBox1.Text.DefaultIfEmpty();
+                maskedTextBox1.Text.DefaultIfEmpty();
 
             }
 
         if (last_char != '+' && last_char != '-' && last_char != '/' && last_char != '*')
             {
-                return richTextBox1.Text += j;
+                return maskedTextBox1.Text += j;
             }
             else
             {
-                return richTextBox1.Text;
+                return maskedTextBox1.Text;
             }
 
         }
@@ -195,9 +195,14 @@ namespace _09_12_2022_Calculator
         }
         public void Clear()
         {
-            richTextBox1.SelectAll();
+            maskedTextBox1.SelectAll();
 
-            richTextBox1.SelectedText = "";
+            maskedTextBox1.SelectedText = "";
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 
